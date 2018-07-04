@@ -1,0 +1,27 @@
+*
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+/*
+
+behance.net
+shutterstock.com
+mockupworld.co
+graphicburger.com
+freebiesbug.com
+unsplash.com
+
+
+Icons:
+http://themes-pixeden.com/font-demos/7-stroke
+
+*/
