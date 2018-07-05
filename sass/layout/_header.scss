@@ -1,0 +1,18 @@
+.header {
+    background: url('../img/header-banner-cup.jpg') $color-header-grey; 
+    background-position: center;
+    background-size:cover;
+    padding: 4rem 0 20rem;  
+
+    &__navigation-container {
+        display: grid;
+        grid: auto / repeat(2, 1fr); 
+        margin-bottom: 18rem;
+    }
+
+    &__banner {
+        display: grid;
+        grid: auto / 60% 1fr;
+    }
+}
+

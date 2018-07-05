@@ -1,10 +1,12 @@
-*
+// Reset
+*,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: inherit; 
 }
+
 
 html {
     // 1rem will be 10px

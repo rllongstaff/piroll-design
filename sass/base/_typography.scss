@@ -16,3 +16,57 @@ Icons:
 http://themes-pixeden.com/font-demos/7-stroke
 
 */
+
+body {
+    color: $color-text-grey;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-headings-black;   
+    font-family: 'Montserrat', sans-serif; 
+}
+
+h1, h2 {
+    margin-bottom: 3rem;
+}
+
+.header {
+    &__text {
+        font-size: 1.8rem;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.header-navigation {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem; 
+    font-weight: bold;
+
+    &__item {
+        margin: 0 1.5rem;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        &:link,
+        &:visited {
+            color: $color-headings-black;
+        }
+
+        &:active,
+        &:hover {
+            color: $color-blue;
+        }
+    }
+}
+
+.button {
+    color: $color-white;
+    font-size: 1.2rem;
+    font-weight: 700; 
+    letter-spacing: .10rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}

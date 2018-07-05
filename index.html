@@ -10,22 +10,31 @@
     </head>
     <body>
 
-        <header>
-            <img src="img/logo.png" alt="Piroll Logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Process</a></li> 
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>                                                                                                                       
-                </ul>
-            </nav>
-            <h1>We Design and Develop</h1>
-            <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
-            <a href="#">Contact us</a>
+        <header class="header">
+            <div class="header__navigation-container">
+                <div class="header__logo">
+                    <img class="header__image" src="img/logo.png" alt="Piroll Logo">
+                </div>
+                <nav>
+                    <ul class="header-navigation">
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">Home</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">About</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">Work</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">Process</a></li> 
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">Services</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">Testimonials</a></li>
+                        <li class="header-navigation__item"><a class="header-navigation__link" href="#">Contact</a></li>                                                                                                                       
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__banner">
+                <div class="header__banner-image"></div>
+                <div class="header__copy-container">
+                    <h1 class="header__heading">We Design and Develop</h1>
+                    <p class="header__text">We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+                    <a class="button" href="#">Contact us</a>
+                </div>
+            </div>
         </header>
         <section>
             <h2>About Us</h2>

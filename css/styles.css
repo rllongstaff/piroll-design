@@ -9,7 +9,7 @@
 1em = 16px
 
 */
-*
+*,
 *::before,
 *::after {
   margin: 0;
@@ -36,3 +36,63 @@ Icons:
 http://themes-pixeden.com/font-demos/7-stroke
 
 */
+body {
+  color: #787878;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #191919;
+  font-family: 'Montserrat', sans-serif; }
+
+h1, h2 {
+  margin-bottom: 3rem; }
+
+.header__text {
+  font-size: 1.8rem;
+  margin-bottom: 3.5rem; }
+
+.header-navigation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold; }
+  .header-navigation__item {
+    margin: 0 1.5rem; }
+  .header-navigation__link {
+    text-decoration: none;
+    text-transform: uppercase; }
+    .header-navigation__link:link, .header-navigation__link:visited {
+      color: #191919; }
+    .header-navigation__link:active, .header-navigation__link:hover {
+      color: #10c9c3; }
+
+.button {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .10rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.button {
+  background: #10c9c3;
+  display: inline-block;
+  padding: 1.8rem 4rem; }
+
+.header-navigation {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none; }
+
+.header {
+  background: url("../img/header-banner-cup.jpg") #e9e9e9;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 0 20rem; }
+  .header__navigation-container {
+    display: grid;
+    grid: auto/repeat(2, 1fr);
+    margin-bottom: 18rem; }
+  .header__banner {
+    display: grid;
+    grid: auto / 60% 1fr; }
