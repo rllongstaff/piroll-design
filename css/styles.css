@@ -1,3 +1,14 @@
+/* Media query manager
+
+0 - 600px phone
+600px - 900px tablet portrait
+900px - 1200px tablet landscape
+1200px - 1800px desktop
+1800px+ Big desktop
+
+1em = 16px
+
+*/
 *
 *::before,
 *::after {
