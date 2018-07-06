@@ -9,6 +9,9 @@
 1em = 16px
 
 */
+.centered-content {
+  text-align: center; }
+
 *,
 *::before,
 *::after {
@@ -21,6 +24,9 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.testimonials {
+  background: #10c9c3; }
 
 /*
 
@@ -66,6 +72,11 @@ h1, h2 {
     .header-navigation__link:active, .header-navigation__link:hover {
       color: #10c9c3; }
 
+.testimonials {
+  color: #fff; }
+  .testimonials__name {
+    color: #fff; }
+
 .button {
   color: #fff;
   font-size: 1.2rem;
@@ -75,7 +86,12 @@ h1, h2 {
   text-transform: uppercase; }
 
 .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: #10c9c3;
+  border: none;
+  cursor: pointer;
   display: inline-block;
   padding: 1.8rem 4rem; }
 
