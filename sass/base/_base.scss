@@ -17,6 +17,22 @@ body {
     box-sizing: border-box;
 }
 
+.skills {
+    display: grid;
+    grid: auto / repeat(2, 1fr);
+}
+
+.stats {
+    background: $color-blue;
+}
+
 .testimonials {
     background: $color-blue;
+}
+
+.clients {
+    display: grid;
+    grid: auto / repeat(5, 1fr);
+    list-style: none;
+    justify-content: center; 
 }

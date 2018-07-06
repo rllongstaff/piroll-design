@@ -25,8 +25,21 @@ html {
 body {
   box-sizing: border-box; }
 
+.skills {
+  display: grid;
+  grid: auto/repeat(2, 1fr); }
+
+.stats {
+  background: #10c9c3; }
+
 .testimonials {
   background: #10c9c3; }
+
+.clients {
+  display: grid;
+  grid: auto/repeat(5, 1fr);
+  list-style: none;
+  justify-content: center; }
 
 /*
 
@@ -71,6 +84,9 @@ h1, h2 {
       color: #191919; }
     .header-navigation__link:active, .header-navigation__link:hover {
       color: #10c9c3; }
+
+.stats {
+  color: #fff; }
 
 .testimonials {
   color: #fff; }
