@@ -16,12 +16,17 @@ body {
     box-sizing: border-box;
 }
 
+.section {
+    padding: 10rem 0;
+}
+
 .skills {
     display: grid;
     grid: auto / repeat(2, 1fr);
 
     &__info {
         background: $color-skills-grey;
+        padding: 16rem 0;
     }
 
     &__image {
@@ -94,3 +99,32 @@ body {
 .footer {
     background: $color-footer-black;
 }
+
+
+// Skills metering
+.meter { 
+	height: 3px;  /* Can be anything */
+	position: relative;
+	background: $color-skills-bar-grey;
+}
+
+
+.meter > span {
+    display: block;
+    height: 100%;
+    background-color: $color-blue;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ux-span {
+      width: 75%;
+  }
+
+  .development-span {
+      width: 90%;
+  }
+
+  .marketing-span {
+      width: 65%;
+  }

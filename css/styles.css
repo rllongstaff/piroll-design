@@ -25,11 +25,15 @@ html {
 body {
   box-sizing: border-box; }
 
+.section {
+  padding: 10rem 0; }
+
 .skills {
   display: grid;
   grid: auto/repeat(2, 1fr); }
   .skills__info {
-    background: #f8f9f9; }
+    background: #f8f9f9;
+    padding: 16rem 0; }
   .skills__image {
     background: #e9e9e9; }
 
@@ -79,6 +83,28 @@ body {
 
 .footer {
   background: #141414; }
+
+.meter {
+  height: 3px;
+  /* Can be anything */
+  position: relative;
+  background: #d8d8d8; }
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: #10c9c3;
+  position: relative;
+  overflow: hidden; }
+
+.ux-span {
+  width: 75%; }
+
+.development-span {
+  width: 90%; }
+
+.marketing-span {
+  width: 65%; }
 
 /*
 
