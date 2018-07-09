@@ -7,7 +7,6 @@
     box-sizing: inherit; 
 }
 
-
 html {
     // 1rem will be 10px
     font-size: 62.5%; // 1rem = 10px  10px / 16px = 62.5%
@@ -20,10 +19,61 @@ body {
 .skills {
     display: grid;
     grid: auto / repeat(2, 1fr);
+
+    &__info {
+        background: $color-skills-grey;
+    }
+
+    &__image {
+        background: $color-header-grey;
+    }
+}
+
+.section-stats {
+    background: $color-blue;
+    padding: 10rem 0;  
 }
 
 .stats {
-    background: $color-blue;
+    display: grid;
+    grid: auto / repeat(4, 1fr);
+}
+
+.stat {
+
+    &__info {
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+.product-images {
+    display: grid;
+    grid: auto / repeat(4, 1fr);
+    list-style: none;
+
+    &__link {
+        display: block;
+
+        &:hover {
+            background-color: rgba($color-overlay-black, .8); 
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 30rem;  
+    }
+}
+
+.section-specialities {
+    background: $color-section-grey; 
+}
+
+.specialities {
+    display: grid;
+    grid: auto / repeat(4, 1fr);
+    justify-content: center;
 }
 
 .testimonials {
@@ -35,4 +85,12 @@ body {
     grid: auto / repeat(5, 1fr);
     list-style: none;
     justify-content: center; 
+}
+
+.contact-section {
+    background: $color-section-grey;
+}
+
+.footer {
+    background: $color-footer-black;
 }
