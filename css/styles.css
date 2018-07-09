@@ -33,7 +33,7 @@ body {
   grid: auto/repeat(2, 1fr); }
   .skills__info {
     background: #f8f9f9;
-    padding: 16rem 0; }
+    padding: 16rem 8.5rem 16rem; }
   .skills__image {
     background: #e9e9e9; }
 
