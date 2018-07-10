@@ -18,6 +18,15 @@ body {
 
 .section {
     padding: 10rem 0;
+
+    &__testimonials {
+        background: $color-blue;        
+        padding: 14rem;
+    }
+
+    &__clients {
+        padding: 6rem 0;
+    }
 }
 
 .skills {
@@ -42,6 +51,7 @@ body {
 .stats {
     display: grid;
     grid: auto / repeat(4, 1fr);
+    justify-items: center;
 }
 
 .stat {
@@ -84,15 +94,13 @@ body {
     justify-content: center;
 }
 
-.testimonials {
-    background: $color-blue;
-}
+
 
 .clients {
     display: grid;
     grid: auto / repeat(5, 1fr);
     list-style: none;
-    justify-content: center; 
+    justify-items: center; 
 }
 
 .contact-section {
