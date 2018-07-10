@@ -45,6 +45,8 @@ body {
 }
 
 .stat {
+    display: grid;
+    grid: auto / 20% 1fr;
 
     &__info {
         display: flex;
