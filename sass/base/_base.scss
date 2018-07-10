@@ -30,12 +30,12 @@ body {
     }
 
     &__image {
-        background: $color-header-grey;
-    }
+        background: url('../img/cactus-books.jpg') no-repeat top / cover $color-header-grey;
+    } 
 }
 
-.section-stats {
-    background: $color-blue;
+.section-stats { 
+    background: $color-blue; 
     padding: 10rem 0;  
 }
 
