@@ -70,6 +70,7 @@ body {
 .specialities {
   display: grid;
   grid: auto/repeat(4, 1fr);
+  grid-row-gap: 5rem;
   justify-content: center; }
 
 .testimonials {
@@ -183,6 +184,16 @@ h1, h2 {
   .gallery__button:link, .gallery__button:visited {
     color: #838383;
     text-decoration: none; }
+
+.speciality {
+  text-align: center; }
+  .speciality__icon {
+    font-size: 5rem; }
+  .speciality__name {
+    font-size: 1.3rem;
+    letter-spacing: .07rem;
+    margin: 2rem 0 1.5rem;
+    text-transform: uppercase; }
 
 .testimonials {
   color: #fff; }

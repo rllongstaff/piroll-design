@@ -97,11 +97,26 @@ h1, h2 {
     letter-spacing: .09rem;
     font-weight: 700;    
     text-transform: uppercase; 
-       
+
     &:link, 
     &:visited {
         color: $color-image-dark-grey;
         text-decoration: none;
+    }
+}
+
+.speciality {
+    text-align: center;
+
+    &__icon {
+        font-size: 5rem;
+    }
+
+    &__name {
+        font-size: 1.3rem;
+        letter-spacing: .07rem;
+        margin: 2rem 0 1.5rem;
+        text-transform: uppercase; 
     }
 }
 
