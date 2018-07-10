@@ -88,7 +88,8 @@ body {
   height: 3px;
   /* Can be anything */
   position: relative;
-  background: #d8d8d8; }
+  background: #d8d8d8;
+  margin: 1.5rem 0 3.5rem; }
 
 .meter > span {
   display: block;
@@ -149,6 +150,12 @@ h1, h2 {
       color: #191919; }
     .header-navigation__link:active, .header-navigation__link:hover {
       color: #10c9c3; }
+
+.skills__name {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: .07rem;
+  text-transform: uppercase; }
 
 .stats {
   color: #fff; }
