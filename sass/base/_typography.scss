@@ -153,6 +153,18 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+.contact-section {
+    &__heading {
+        text-align: center;
+    }
+
+    &__text {
+        margin: 0 auto 3rem;
+        text-align: center;
+        width: 55rem;
+    }
+}
+
 .footer {
     &__header {
         color: $color-white;

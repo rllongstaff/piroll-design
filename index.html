@@ -220,14 +220,28 @@
                                            
         </section>
         <section class="section contact-section">
-            <h2>Need a Project?</h2>
-            <p>Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
+            <h2 class="contact-section__heading">Need a Project?</h2>
+            <p class="contact-section__text">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
             <form class="contact-form">
-                <input type="text" name="name" id="name" placeholder="Your Name">
-                <input type="email" name="email" id="email" placeholder="Your Email">
-                <input type="text" name="title" id="title" placeholder="Your Title">
-                <textarea name="comment" placeholder="Your Comment"></textarea>
-                <input class="button" type="submit" value="Submit Message">
+                <div class="form-element-grid">
+                    <div class="contact-form__element">
+                        <input class="contact-form__input" type="text" name="name" id="name" placeholder="Your Name" required>
+                        <label class="contact-form__label" for="name">Your Name<span class="contact-form__span"> *</span></label>
+                    </div>
+                    <div class="contact-form__element">
+                        <input class="contact-form__input" type="email" name="email" id="email" placeholder="Your Email" required>
+                        <label class="contact-form__label" for="email">Your Email<span class="contact-form__span"> *</span></label>                        
+                    </div>
+                </div>
+                <div class="contact-form__element">
+                    <input class="contact-form__input" type="text" name="title" id="title" placeholder="Your Title" required>
+                    <label class="contact-form__label" for="title">Your Title<span class="contact-form__span"> *</span></label>
+                </div>
+                <div class="contact-form__element">
+                    <textarea class="contact-form__textarea" name="comment" placeholder="Your Comment" required></textarea>
+                    <label class="contact-form__label" for="comment">Your Comment<span class="contact-form__span"> *</span></label>
+                </div>
+                <input class="button button--contact" type="submit" value="Submit Message">
             </form>
         </section>
         <footer class="footer">

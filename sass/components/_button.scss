@@ -6,7 +6,12 @@
     border: none;
     cursor: pointer;
     display: inline-block;
-    padding: 1.8rem 4rem;     
+    padding: 1.8rem 4rem; 
+    
+    &--contact {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .gallery {

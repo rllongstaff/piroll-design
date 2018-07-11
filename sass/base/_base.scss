@@ -108,7 +108,68 @@ body {
 }
 
 .contact-section {
-    background: $color-section-grey;
+    background: $color-section-grey; 
+}
+
+.contact-form {
+    margin: 0 auto; 
+    width: 68rem;
+
+    &__input {
+        border: none;
+        color: $color-text-grey;
+        font-family: inherit;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        width: 100%; 
+
+        &::-webkit-input-placeholder {
+            color: $color-text-grey; 
+        }           
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem); 
+    }  
+    
+    &__label {
+        display: block;
+        font-weight: 700;
+        text-align: left; 
+        transition: all .3s; 
+    }   
+    
+    &__span {
+        color: red;
+    }
+
+    &__textarea {
+        border: none;
+        color: $color-text-grey;
+        font-family: inherit;  
+        font-size: 1.5rem;
+        height: 17rem;  
+        padding: 1.5rem; 
+        width: 100%;
+
+        &::-webkit-input-placeholder {
+            color: $color-text-grey;
+        }         
+    }
+
+    &__textarea:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }    
+}
+
+.form-element-grid {
+    display: grid;
+    grid: auto / repeat(2, 1fr);
+    grid-column-gap: 3rem;
 }
 
 .footer {
