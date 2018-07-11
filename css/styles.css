@@ -96,8 +96,6 @@ body {
   .contact-form__input {
     border: none;
     color: #787878;
-    font-family: inherit;
-    font-size: 1.5rem;
     padding: 1.5rem;
     width: 100%; }
     .contact-form__input::-webkit-input-placeholder {
@@ -108,16 +106,12 @@ body {
     transform: translateY(-4rem); }
   .contact-form__label {
     display: block;
-    font-weight: 700;
-    text-align: left;
     transition: all .3s; }
   .contact-form__span {
     color: red; }
   .contact-form__textarea {
     border: none;
     color: #787878;
-    font-family: inherit;
-    font-size: 1.5rem;
     height: 17rem;
     padding: 1.5rem;
     width: 100%; }
@@ -281,6 +275,18 @@ h1, h2 {
   margin: 0 auto 3rem;
   text-align: center;
   width: 55rem; }
+
+.contact-form__label {
+  font-weight: 700;
+  text-align: left; }
+
+.contact-form__input {
+  font-family: inherit;
+  font-size: 1.5rem; }
+
+.contact-form__textarea {
+  font-family: inherit;
+  font-size: 1.5rem; }
 
 .footer__header {
   color: #fff;
