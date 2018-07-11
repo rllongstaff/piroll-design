@@ -118,6 +118,11 @@ h1, h2 {
         margin: 2rem 0 1.5rem;
         text-transform: uppercase; 
     }
+
+    &__text {
+        margin: 0 auto;
+        width: 22rem;
+    }
 }
 
 .testimonials {
@@ -146,4 +151,37 @@ h1, h2 {
     letter-spacing: .10rem;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.footer {
+    &__header {
+        color: $color-white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: .07rem;
+    }
+
+    &__copy {
+        color: $color-footer-text-grey;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__social {
+        justify-self: flex-end;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $color-footer-text-grey;
+        text-decoration: none;
+    }
+
+    &__link:active,
+    &__link:hover {
+        color: $color-white;
+    }
 }

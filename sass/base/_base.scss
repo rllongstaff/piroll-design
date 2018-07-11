@@ -56,7 +56,11 @@ body {
 
 .stat {
     display: grid;
-    grid: auto / 20% 1fr;
+    grid: auto / 8rem 1fr;
+
+    &__icon {
+        align-self: flex-start
+    }
 
     &__info {
         display: flex;
@@ -109,6 +113,13 @@ body {
 
 .footer {
     background: $color-footer-black;
+    padding: 9rem 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid: auto / 42% 25% repeat(2, 1fr) 15%;
+    margin: 0 10rem; 
 }
 
 
