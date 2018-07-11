@@ -2,4 +2,9 @@
     display: flex; 
     justify-content: flex-end; 
     list-style: none;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+  
 }

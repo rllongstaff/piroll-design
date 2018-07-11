@@ -201,6 +201,10 @@ h1, h2 {
 
     &__social {
         justify-self: flex-end;
+
+        @include respond(phone) {
+            justify-self: flex-start; 
+        }
     }
 
     &__link:link,

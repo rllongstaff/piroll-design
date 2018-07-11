@@ -33,6 +33,10 @@ body {
     display: grid;
     grid: auto / repeat(2, 1fr);
 
+    @include respond(phone) {
+        grid: auto / 1fr; 
+    }
+
     &__info {
         background: $color-skills-grey;
         padding: 16rem 8.5rem 16rem;
@@ -40,17 +44,29 @@ body {
 
     &__image {
         background: url('../img/cactus-books.jpg') no-repeat top / cover $color-header-grey;
+
+        @include respond(phone) {
+            display: none;
+        }
     } 
 }
 
 .section-stats { 
-    background: $color-blue;
+    background: $color-blue; 
     padding: 10rem 0;  
 }
 
 .stats {
     display: grid;
     grid: auto / repeat(4, 1fr);
+
+    @include respond(tablet-portrait) {
+        grid: auto / repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+        grid: auto / 1fr;
+    }
     justify-items: center;
 }
 
@@ -71,6 +87,15 @@ body {
 .product-images {
     display: grid;
     grid: auto / repeat(4, 1fr);
+
+    @include respond(tablet-portrait) {
+        grid: auto /repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+        grid: auto / 1fr;
+    }
+
     list-style: none;
 
     &__link {
@@ -96,6 +121,14 @@ body {
     grid: auto / repeat(4, 1fr);
     grid-row-gap: 5rem;
     justify-content: center;
+
+    @include respond(tablet-portrait) {
+        grid: auto / repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+        grid: auto / 1fr;
+    }
 }
 
 
@@ -105,6 +138,16 @@ body {
     grid: auto / repeat(5, 1fr);
     list-style: none;
     justify-items: center; 
+
+    @include respond(tablet-portrait) {
+        grid: auto / repeat(3, 1fr);
+        grid-row-gap: 3rem;
+    }
+
+    @include respond(phone) {
+        grid: auto / 1fr;
+        grid-row-gap: 4rem;
+    }
 }
 
 .contact-section {
@@ -164,6 +207,11 @@ body {
     display: grid;
     grid: auto / repeat(2, 1fr);
     grid-column-gap: 3rem;
+
+    @include respond(phone) {
+        grid: auto / 1fr;
+        grid-column-gap: 0;
+    }
 }
 
 .footer {
@@ -175,6 +223,15 @@ body {
     display: grid;
     grid: auto / 42% 25% repeat(2, 1fr) 15%;
     margin: 0 10rem; 
+
+    @include respond(tablet-portrait) {
+        grid: auto / repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+        grid: auto / 1fr; 
+        grid-row-gap: 2rem; 
+    }
 }
 
 
