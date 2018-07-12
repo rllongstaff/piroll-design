@@ -4,17 +4,17 @@
     background-size:cover;
     padding: 4rem 0 20rem;  
 
+    @include respond(phone) {
+        padding: 4rem 0 10rem;  
+    }
+
     &__navigation-container {
         display: grid;
         grid: auto / repeat(2, 1fr); 
         margin: 0 10rem 18rem;
 
         @include respond(tablet-portrait) {
-
-        }
-
-        @include respond(tablet-portrait) {
-           grid: auto / repeat(1, 1fr) 
+            margin: 0 5rem 6rem;
         }
     }
 
