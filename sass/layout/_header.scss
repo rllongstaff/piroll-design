@@ -2,9 +2,10 @@
     background: url('../img/header-banner-cup.jpg') $color-header-grey; 
     background-position: center;
     background-size:cover;
-    padding: 4rem 0 20rem;  
+    padding: 4rem 0 20rem; 
 
     @include respond(phone) {
+        background: $color-header-grey;
         padding: 4rem 0 10rem;  
     }
 
@@ -16,6 +17,10 @@
         @include respond(tablet-portrait) {
             margin: 0 5rem 6rem;
         }
+
+        @include respond(phone) {
+            margin: 0 2rem 6rem;
+        }
     }
 
     &__banner {
@@ -25,6 +30,13 @@
 
         @include respond(phone) {
             grid: auto / 1fr; 
+        }
+    }
+
+    &__copy-container {
+        
+        @include respond(phone) {
+            text-align: center;
         }
     }
 }

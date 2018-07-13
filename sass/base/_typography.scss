@@ -75,6 +75,10 @@ h2 {
         margin: 0 auto 2.2rem;
         text-align: center;
         width: 50%;
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 }
 

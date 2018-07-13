@@ -5,6 +5,7 @@
 
     @include respond(phone) {
         flex-direction: column;
+        align-items: flex-end;
     }
   
 }
