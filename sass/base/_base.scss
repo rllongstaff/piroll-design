@@ -19,15 +19,26 @@ body {
 .section {
     padding: 10rem 0;
 
-    &__testimonials {
-        background: $color-blue;        
-        padding: 14rem;
-
-
+    &--stats {
+        background: $color-blue; 
+        padding: 10rem 0;  
     }
 
-    &__clients {
+    &--specialities {
+        background: $color-section-grey; 
+    }
+
+    &--testimonials {
+        background: $color-blue;        
+        padding: 14rem;
+    }
+
+    &--clients {
         padding: 6rem 0;
+    }
+
+    &--contact {
+        background: $color-section-grey; 
     }
 }
 
@@ -51,11 +62,6 @@ body {
             display: none;
         }
     } 
-}
-
-.section-stats { 
-    background: $color-blue; 
-    padding: 10rem 0;  
 }
 
 .stats {
@@ -114,10 +120,6 @@ body {
     }
 }
 
-.section-specialities {
-    background: $color-section-grey; 
-}
-
 .specialities {
     display: grid;
     grid: auto / repeat(4, 1fr);
@@ -150,10 +152,6 @@ body {
         grid: auto / 1fr;
         grid-row-gap: 4rem;
     }
-}
-
-.contact-section {
-    background: $color-section-grey; 
 }
 
 .contact-form {

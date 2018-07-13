@@ -27,11 +27,18 @@ body {
 
 .section {
   padding: 10rem 0; }
-  .section__testimonials {
+  .section--stats {
+    background: #10c9c3;
+    padding: 10rem 0; }
+  .section--specialities {
+    background: #f5f5f5; }
+  .section--testimonials {
     background: #10c9c3;
     padding: 14rem; }
-  .section__clients {
+  .section--clients {
     padding: 6rem 0; }
+  .section--contact {
+    background: #f5f5f5; }
 
 .skills {
   display: grid;
@@ -47,10 +54,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .skills__image {
         display: none; } }
-
-.section-stats {
-  background: #10c9c3;
-  padding: 10rem 0; }
 
 .stats {
   display: grid;
@@ -90,9 +93,6 @@ body {
     width: 100%;
     height: 30rem; }
 
-.section-specialities {
-  background: #f5f5f5; }
-
 .specialities {
   display: grid;
   grid: auto/repeat(4, 1fr);
@@ -118,9 +118,6 @@ body {
     .clients {
       grid: auto / 1fr;
       grid-row-gap: 4rem; } }
-
-.contact-section {
-  background: #f5f5f5; }
 
 .contact-form {
   margin: 0 auto;
@@ -249,6 +246,14 @@ h1, h2 {
     .header-navigation__link:active, .header-navigation__link:hover {
       color: #10c9c3; }
 
+.section__heading {
+  text-align: center; }
+
+.section__text {
+  margin: 0 auto 2.2rem;
+  text-align: center;
+  width: 50%; }
+
 .skills__name {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.3rem;
@@ -270,12 +275,12 @@ h1, h2 {
   letter-spacing: .05rem;
   text-transform: uppercase; }
 
-.gallery__button {
+.button--load-more {
   font-size: 1.25rem;
   letter-spacing: .09rem;
   font-weight: 700;
   text-transform: uppercase; }
-  .gallery__button:link, .gallery__button:visited {
+  .button--load-more:link, .button--load-more:visited {
     color: #838383;
     text-decoration: none; }
 
@@ -375,15 +380,14 @@ h1, h2 {
   cursor: pointer;
   display: inline-block;
   padding: 1.8rem 4rem; }
+  .button--load-more {
+    background: #f5f5f5;
+    display: block;
+    text-align: center;
+    padding: 4rem 0; }
   .button--contact {
     display: block;
     margin: 0 auto; }
-
-.gallery__button {
-  background: #f5f5f5;
-  display: block;
-  text-align: center;
-  padding: 4rem 0; }
 
 .header-navigation {
   display: flex;
