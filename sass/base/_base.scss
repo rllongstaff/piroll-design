@@ -69,33 +69,7 @@ body {
     } 
 }
 
-.stats {
-    display: grid;
-    grid: auto / repeat(4, 1fr);
 
-    @include respond(tablet-portrait) {
-        grid: auto / repeat(2, 1fr);
-    }
-
-    @include respond(phone) {
-        grid: auto / 1fr;
-    }
-    justify-items: center;
-}
-
-.stat {
-    display: grid;
-    grid: auto / 8rem 1fr;
-
-    &__icon {
-        align-self: flex-start
-    }
-
-    &__info {
-        display: flex;
-        flex-direction: column; 
-    }
-}
 
 .product-images {
     display: grid;
@@ -120,6 +94,7 @@ body {
     }
 
     &__image {
+        display: block;
         width: 100%;
         height: 30rem;  
     }
