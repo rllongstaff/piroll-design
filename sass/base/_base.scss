@@ -36,14 +36,19 @@ body {
     &--testimonials {
         background: $color-blue;        
         padding: 14rem;
+
+        @include respond(phone) {
+            padding: 14rem 3rem;
+        }
     }
 
     &--clients {
-        padding: 6rem 0;
+        padding: 6rem 0; 
     }
 
     &--contact {
         background: $color-section-grey; 
+        padding: 10rem 3rem; 
     }
 }
 
