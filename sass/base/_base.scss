@@ -137,8 +137,6 @@ body {
     }
 }
 
-
-
 .footer {
     background: $color-footer-black;
     padding: 9rem 0;
@@ -150,7 +148,7 @@ body {
     margin: 0 10rem; 
 
     @include respond(tablet-portrait) {
-        grid: auto / repeat(2, 1fr);
+        grid: auto/ 42% 32% repeat(2, 1fr);
     }
 
     @include respond(phone) {
